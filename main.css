@@ -1,0 +1,90 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body{
+  margin: 0;
+}
+.logo{
+  float: left;
+  margin: 0;
+  padding: 25px 0 0 25px;
+}
+h1 img{
+  width: 250px;
+}
+.header{
+  margin :0;
+  background-color: #2F3B49;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100px;
+}
+.mainlist li{
+float: left;
+color : white;
+font-size: 22px;
+font-weight: 400;
+padding: 35px 20px;
+list-style: none;
+letter-spacing: -0.5px;
+font-family: 'Noto Sans KR', sans-serif;
+}
+.mainlist{
+  float: right;
+  margin : auto;
+}
+.mainlist_ul{
+  margin: 0;
+}
+.mainimg{
+  width: 100%;
+  height: 41.5vw;
+  background-image:url('1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.thisweek{
+  width: 100%;
+  height: 315px;
+  background-image: url('2.jpg');
+  background-size: cover;
+  background-position: center;
+  margin-top: 15px;
+  background-repeat: no-repeat;
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.thisweek p{
+  display: inline-block;
+  width: auto;
+  font-size: 18px;
+  font-weight: 400;
+  color : white;
+  border-radius: 100px;
+  background-color: rgb(47,59,73);
+  padding: 7px 30px;
+  margin: 71px 0 0 0;
+}
+
+.thisweek span{
+  color : #73ffe6;
+}
+
+.thisweek h2{
+  color : #444;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0;
+  padding : 15px 0 5px 0;
+}
+
+.thisweek h3{
+  color : #666;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+  padding: 0;
+  margin: 0;
+}
