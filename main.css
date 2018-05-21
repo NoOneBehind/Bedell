@@ -22,7 +22,7 @@ h1 img{
   grid-template-columns: 1fr 2fr;
   height: 100px;
 }
-.mainlist li{
+.mainlist >ul>li{
 display: inline;
 color : white;
 font-size: 22px;
@@ -31,6 +31,7 @@ padding: 35px 20px;
 list-style: none;
 letter-spacing: -0.5px;
 font-family: 'Noto Sans KR', sans-serif;
+position: relative;
 }
 .mainlist{
   float: right;
@@ -42,6 +43,44 @@ font-family: 'Noto Sans KR', sans-serif;
   list-style: none;
   text-align: right;
 }
+.mainlist nav ul{
+  text-align: center;
+}
+.mainlist nav{
+  display: none;
+  font-size: 16px;
+  background-color: rgba(255,255,255,0.8);
+  border: 1px solid rgba(0,0,0,0.2);
+  border-top: none;
+  position: absolute;
+  width : 170px;
+  left : calc(50% - 85px);
+  top:99px;
+}
+.mainlist nav a{
+  display :inline-block;
+  text-decoration: none;
+  align-items: center;
+  vertical-align: middle;
+  color : #222;
+  padding: 10px 0;
+  margin: 0;
+  width: 126px;
+  height: auto;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.mainlist nav a:hover{
+  color:#7fa437;
+}
+.mainlist nav li:last-child a{
+  border-style: none;
+}
+.mainlist nav li:first-child{
+  padding-top: 15px;
+  background-image: url('sublistdown.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+}
 .mainimg{
   width: 100%;
   height: 41.5vw;
@@ -49,6 +88,18 @@ font-family: 'Noto Sans KR', sans-serif;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+.mainimg img{
+  position: relative;
+  top: 47%;
+}
+.lcontrol{
+  float: left;
+  left:25px;
+}
+.rcontrol{
+  float: right;
+  right: 25px;
 }
 .thisweek{
   width: 100%;
